@@ -1,5 +1,6 @@
 import Banner from "@/components/sections/Banner";
 import BestSellers from "@/components/sections/BestSellers";
+import Footer from "@/components/sections/Footer";
 import Header from "@/components/sections/Header";
 import HotCategory from "@/components/sections/HotCategory";
 import Newsletter from "@/components/sections/Newsletter";
@@ -16,6 +17,7 @@ export default function Home() {
       <Zara />
       <BestSellers />
       <Newsletter />
+      <Footer />
     </main>
   );
 }

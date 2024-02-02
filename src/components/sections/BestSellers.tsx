@@ -80,7 +80,7 @@ const Product = [
 
 const BestSellers = () => {
   return (
-    <section>
+    <section className="bg-white">
       <MaxContentWidthWrapper className="py-[140px]">
         <Title>Best Sellers</Title>
         <div className="lg:grid lg:grid-cols-2 items-center hidden">

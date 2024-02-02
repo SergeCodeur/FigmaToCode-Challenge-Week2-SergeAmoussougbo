@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary: 5 100% 69%;
+    --black: 210 25% 16%;
+    --white: 0 0% 100%;
+    --dark: 0 0% 0%;
+    --stroke: 0 0% 89%;
+  }
+}

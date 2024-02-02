@@ -2,7 +2,7 @@ import * as React from "react";
 
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import { FaBagShopping } from "react-icons/fa6";
+import { FaBagShopping, FaInstagram } from "react-icons/fa6";
 import { GoSearch } from "react-icons/go";
 import { SlHeart } from "react-icons/sl";
 import { Button } from "./button";
@@ -61,7 +61,7 @@ export const CardItemCategory = React.forwardRef<
     </div>
   )
 );
-CardItemCategory.displayName = "Card";
+CardItemCategory.displayName = "CardItemCategory";
 
 interface ProductCardProps {
   className?: string;
@@ -164,4 +164,34 @@ export const ProductCard = React.forwardRef<HTMLDivElement, ProductCardProps>(
     </div>
   )
 );
-ProductCard.displayName = "Card";
+ProductCard.displayName = "ProductCard";
+
+export interface InstagramCardProps {
+  className?: string;
+  image: string;
+  imageWidth?: number;
+  imageHeight?: number;
+}
+
+export const InstagramCard = React.forwardRef<
+  HTMLDivElement,
+  InstagramCardProps
+>(({ className, image, imageWidth, imageHeight, ...props }, ref) => (
+  <div
+    ref={ref}
+    className={cn("relative overflow-hidden group", className)}
+    {...props}
+  >
+    <Image
+      src={image}
+      alt=""
+      width={imageWidth}
+      height={imageHeight}
+      className="aspect-square object-cover group-hover:scale-125 transition-all duration-300 ease-linear"
+    />
+    <div className="absolute w-full h-full top-0 left-0 bg-dark/50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-200">
+      <FaInstagram size={60} className="text-white cursor-pointer" />
+    </div>
+  </div>
+));
+InstagramCard.displayName = "InstagramCard";

@@ -2,6 +2,10 @@ import * as React from "react";
 
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import { FaBagShopping } from "react-icons/fa6";
+import { GoSearch } from "react-icons/go";
+import { SlHeart } from "react-icons/sl";
+import { Button } from "./button";
 import { Ribbon } from "./ribbon";
 
 export interface CardItemCategoryProps {
@@ -89,10 +93,10 @@ export const ProductCard = React.forwardRef<HTMLDivElement, ProductCardProps>(
   ) => (
     <div
       ref={ref}
-      className={cn("flex flex-col gap-[18px]", className)}
+      className={cn("flex flex-col gap-[18px] group", className)}
       {...props}
     >
-      <div className="relative overflow-hidden group">
+      <div className="relative overflow-hidden">
         <Image
           src={image}
           alt={category}
@@ -107,6 +111,22 @@ export const ProductCard = React.forwardRef<HTMLDivElement, ProductCardProps>(
             </Ribbon>
           </span>
         )}
+        <div className="absolute bottom-0 left-0 w-full transition-tansform duration-300 px-[14px] py-[15px] bg-black flex items-center justify-between translate-y-16 group-hover:translate-y-0">
+          <div className="flex justify-start gap-[21px]">
+            <SlHeart
+              className="hover:text-primary cursor-pointer text-white"
+              size={25}
+            />
+            <GoSearch
+              className="hover:text-primary cursor-pointer text-white"
+              size={25}
+            />
+          </div>
+          <Button variant="simple" className="font-roboto">
+            <FaBagShopping />
+            <span>Shop Now</span>
+          </Button>
+        </div>
       </div>
       <div className="space-y-4">
         <h3 className="font-open_sans text-xl">{product_name}</h3>

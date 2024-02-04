@@ -84,13 +84,13 @@ const Footer = () => {
     <footer className="bg-white">
       <MaxContentWidthWrapper className="pt-[140px]">
         <div className="flex flex-wrap gap-[56px] pb-[90px]">
-          <div className="lg:w-1/3 w-full flex flex-col space-y-8 max-w-[392px]">
+          <div className="lg:w-1/3 w-full flex flex-col space-y-8 lg:max-w-[392px] max-lg:items-center">
             <Image src={Logo} height={34} width={180} alt="logo" />
-            <p className="text-sm font-open_sans text-black/75">
+            <p className="text-sm font-open_sans text-black/75 max-md:text-center">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua
             </p>
-            <ul className="flex gap-10 w-full">
+            <ul className="flex gap-10 w-full max-md:justify-center">
               <li>
                 <FaFacebookF size={20} className="cursor-pointer text-black" />
               </li>
@@ -106,7 +106,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="lg:w-3/5 w-full grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 max-sm:gap-4">
-            <div>
+            <div className="max-md:text-center">
               <h2 className="text-dark text-xl uppercase font-open_sans">
                 Catalog
               </h2>
@@ -122,7 +122,7 @@ const Footer = () => {
                 ))}
               </ul>
             </div>
-            <div>
+            <div className="max-md:text-center">
               <h2 className="text-dark text-xl uppercase font-open_sans">
                 about us
               </h2>
@@ -138,7 +138,7 @@ const Footer = () => {
                 ))}
               </ul>
             </div>
-            <div>
+            <div className="max-md:text-center">
               <h2 className="text-dark text-xl uppercase font-open_sans">
                 customer services
               </h2>

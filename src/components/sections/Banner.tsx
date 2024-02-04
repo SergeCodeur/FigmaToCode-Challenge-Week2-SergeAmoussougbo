@@ -9,7 +9,7 @@ import { Button } from "../ui/button";
 
 const Banner = () => {
   return (
-    <div className="pt-[101px] pb-[60px] relative">
+    <section className="lg:pt-[101px] pt-10 pb-[60px] relative">
       <Image
         className="absolute bottom-[30px] left-0 lg:block hidden"
         src={FlowerLeft}
@@ -17,7 +17,7 @@ const Banner = () => {
         width={132}
         height={66}
       />
-      <MaxContentWidthWrapper className="flex gap-[120px] max-md:flex-col-reverse max-md:items-center">
+      <MaxContentWidthWrapper className="flex lg:gap-[120px] gap-12 max-md:flex-col-reverse max-md:items-center">
         <div className="flex flex-col justify-center">
           <h1 className="lg:text-8xl text-[53px] font-light text-dark mb-[52px] font-open_sans">
             Collections
@@ -57,7 +57,7 @@ const Banner = () => {
           className="absolute right-0 bottom-40 lg:block hidden"
         />
       </MaxContentWidthWrapper>
-    </div>
+    </section>
   );
 };
 

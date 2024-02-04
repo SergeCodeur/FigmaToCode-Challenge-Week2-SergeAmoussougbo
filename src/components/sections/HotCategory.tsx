@@ -47,7 +47,7 @@ const HoteGategoryItem = [
 
 const HotCategory = () => {
   return (
-    <div className="bg-background">
+    <section className="bg-background">
       <MaxContentWidthWrapper className="pt-[90px] pb-[140px]">
         <Brands />
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-6 mt-[90px]">
@@ -84,7 +84,7 @@ const HotCategory = () => {
           </div>
         </div>
       </MaxContentWidthWrapper>
-    </div>
+    </section>
   );
 };
 

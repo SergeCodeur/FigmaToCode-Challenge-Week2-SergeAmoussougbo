@@ -4,7 +4,7 @@ import TopHeader from "./TopHeader";
 
 const Header = () => {
   return (
-    <header className="h-[113px] mt-[31px] relative z-50">
+    <header className="lg:h-[113px] h-24 mt-[31px] relative z-50">
       <MaxContentWidthWrapper className="flex flex-col lg:gap-[30px]">
         <TopHeader />
         <div className="h-[1px] bg-stroke w-full"></div>

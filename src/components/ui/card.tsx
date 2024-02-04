@@ -45,7 +45,7 @@ export const CardItemCategory = React.forwardRef<
         alt={category}
         width={imageWidth}
         height={imageHeight}
-        className="aspect-square object-cover group-hover:scale-125 transition-all duration-300 ease-linear"
+        className="aspect-square object-cover group-hover:scale-125 transition-all duration-300 ease-linear h-full w-full"
       />
       {ribbon && (
         <span className="absolute top-6 left-0">
@@ -187,7 +187,7 @@ export const InstagramCard = React.forwardRef<
       alt=""
       width={imageWidth}
       height={imageHeight}
-      className="aspect-square object-cover group-hover:scale-125 transition-all duration-300 ease-linear"
+      className="aspect-square object-cover group-hover:scale-125 transition-all duration-300 ease-linear w-full"
     />
     <div className="absolute w-full h-full top-0 left-0 bg-dark/50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-200">
       <FaInstagram size={60} className="text-white cursor-pointer" />

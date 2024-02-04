@@ -50,11 +50,11 @@ const HotCategory = () => {
     <div className="bg-background">
       <MaxContentWidthWrapper className="pt-[90px] pb-[140px]">
         <Brands />
-        <div className="grid grid-cols-2 gap-6 mt-[90px]">
+        <div className="grid lg:grid-cols-2 grid-cols-1 gap-6 mt-[90px]">
           <div className="relative">
             <div className="relative overflow-hidden group">
               <Image
-                className="aspect-square object-cover group-hover:scale-125 transition-all duration-300 ease-linear"
+                className="aspect-square object-cover group-hover:scale-125 transition-all duration-300 ease-linear w-full h-full"
                 src={Model1}
                 alt=""
                 width={648}
@@ -65,11 +65,11 @@ const HotCategory = () => {
                 <span>160 Products</span>
               </div>
             </div>
-            <h2 className="-rotate-90 absolute flex-shrink-0 uppercase font-roboto font-normal lg:text-4xl -left-2/4 top-[43%] translate-y-2/4">
+            <h2 className="-rotate-90 absolute flex-shrink-0 uppercase font-roboto font-normal lg:text-4xl -left-2/4 top-[43%] translate-y-2/4 max-sm:hidden">
               Explore new and popular styles
             </h2>
           </div>
-          <div className="grid grid-cols-2 gap-6">
+          <div className="grid lg:grid-cols-2 grid-cols-1 gap-6">
             {HoteGategoryItem.map((item) => (
               <CardItemCategory
                 key={item.id}

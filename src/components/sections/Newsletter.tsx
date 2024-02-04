@@ -54,7 +54,7 @@ const Newsletter = () => {
     <section className="bg-black/5">
       <MaxContentWidthWrapper className="py-[100px]">
         <Title>Follow products and discounts on Instagram</Title>
-        <div className="grid grid-cols-6 justify-center gap-6 mt-[60px] mb-[70px]">
+        <div className="grid lg:grid-cols-6 sm:grid-cols-2 items-center grid-cols-1 justify-center gap-6 mt-[60px] mb-[70px]">
           {Pictures.map((item) => (
             <InstagramCard key={item.id} {...item} />
           ))}
@@ -63,14 +63,18 @@ const Newsletter = () => {
         <div className=" max-w-[760px] mx-auto w-full">
           <form
             action=""
-            className="flex justify-between items-end mt-[74px] gap-[26px] w-full"
+            className="flex justify-between lg:flex-row flex-col lg:items-end mt-[74px] gap-[26px] w-full"
           >
             <Input
               type="email"
               placeholder="Email address..."
-              className="flex-1 font-roboto"
+              className="lg:flex-1 font-roboto"
             />
-            <Button variant="line" className="uppercase" type="submit">
+            <Button
+              variant="line"
+              className="uppercase max-lg:max-w-[30%] max-lg:mx-auto"
+              type="submit"
+            >
               Submit
             </Button>
           </form>

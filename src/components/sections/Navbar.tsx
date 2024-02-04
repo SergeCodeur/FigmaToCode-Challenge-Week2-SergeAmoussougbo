@@ -1,3 +1,4 @@
+"use client";
 import { ItemMenu } from "../ui/item-menu";
 
 const Routes = [
@@ -45,7 +46,7 @@ const Navlinks = () => {
 
 const Navbar = () => {
   return (
-    <nav className="w-full flex justify-between">
+    <nav className="w-full flex lg:justify-between lg:flex-row flex-col items-center max-lg:gap-3 relative max-lg:py-3 max-lg:hidden">
       <Navlinks />
     </nav>
   );

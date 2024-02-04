@@ -7,7 +7,7 @@ import { Button } from "../ui/button";
 
 const Zara = () => {
   return (
-    <div className="relative">
+    <section className="relative max-sm:hidden block">
       <Image src={ZaraBg} alt="" className="w-full h-full object-cover" />
       <MaxContentWidthWrapper>
         <div className="absolute z-20 bottom-[45px] right-[166px] max-w-[504px]">
@@ -29,7 +29,7 @@ const Zara = () => {
         alt=""
         className="absolute right-0 top-[51px]"
       />
-    </div>
+    </section>
   );
 };
 

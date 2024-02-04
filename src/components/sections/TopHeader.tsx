@@ -7,7 +7,7 @@ import { GoSearch } from "react-icons/go";
 import { Button } from "../ui/button";
 const TopHeader = () => {
   return (
-    <div className="grid grid-cols-3 items-center w-full">
+    <div className="grid grid-cols-3 items-center w-full max-lg:mb-[35px]">
       <GoSearch className="hover:text-primary cursor-pointer" size={19} />
       <Link href="/">
         <Image
@@ -18,7 +18,7 @@ const TopHeader = () => {
           className="mx-auto"
         />
       </Link>
-      <div className="flex justify-end items-center gap-2">
+      <div className="lg:flex hidden justify-end items-center gap-2">
         <Button variant="simple" className="font-roboto text-black">
           <FaUser />
           <span>Acount</span>

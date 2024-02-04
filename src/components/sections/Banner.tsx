@@ -11,18 +11,18 @@ const Banner = () => {
   return (
     <div className="pt-[101px] pb-[60px] relative">
       <Image
-        className="absolute bottom-[30px] left-0"
+        className="absolute bottom-[30px] left-0 lg:block hidden"
         src={FlowerLeft}
         alt="flower-left"
         width={132}
         height={66}
       />
-      <MaxContentWidthWrapper className="flex gap-[120px]">
+      <MaxContentWidthWrapper className="flex gap-[120px] max-md:flex-col-reverse max-md:items-center">
         <div className="flex flex-col justify-center">
-          <h1 className="text-8xl text-dark mb-[52px] font-open_sans">
+          <h1 className="lg:text-8xl text-[53px] font-light text-dark mb-[52px] font-open_sans">
             Collections
           </h1>
-          <p className="text-[30px] leading-[55px] mb-[66px] case">
+          <p className="lg:text-[30px] text-[22px] lg:leading-[55px] mb-[66px] case">
             You Can Explore Ans Shop Many Differnt Collection
             <br /> From Various Barands Here.
           </p>
@@ -33,16 +33,16 @@ const Banner = () => {
             </Button>
           </div>
         </div>
-        <div className="max-w-[442px] relative w-full">
+        <div className="max-w-[442px] relative w-full max-lg:flex max-lg:justify-center">
           <Image
-            className="w-full"
+            className="lg:w-full w-4/5"
             src={Stroke}
             width={424}
             height={542}
             alt=""
           />
           <Image
-            className="absolute top-[-18px] left-[-18px] z-20 w-full"
+            className="absolute top-[-18px] lg:-left-[18px] left-[18px] z-20 lg:w-full w-4/5"
             src={Girl}
             width={424}
             height={542}
@@ -54,7 +54,7 @@ const Banner = () => {
           alt=""
           width={194}
           height={262}
-          className="absolute right-0 bottom-40"
+          className="absolute right-0 bottom-40 lg:block hidden"
         />
       </MaxContentWidthWrapper>
     </div>

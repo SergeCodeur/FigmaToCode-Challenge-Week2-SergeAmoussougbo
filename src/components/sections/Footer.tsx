@@ -2,6 +2,12 @@ import PaymentMethode from "@/assets/images/icons_payment.svg";
 import Logo from "@/assets/images/logo.webp";
 import Image from "next/image";
 import Link from "next/link";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedinIn,
+  FaTwitter,
+} from "react-icons/fa";
 import { LuArrowUp } from "react-icons/lu";
 import MaxContentWidthWrapper from "../MaxContentWidthWrapper";
 import { Button } from "../ui/button";
@@ -77,15 +83,29 @@ const Footer = () => {
   return (
     <footer className="bg-white">
       <MaxContentWidthWrapper className="pt-[140px]">
-        <div className="flex gap-[56px] pb-[90px]">
-          <div className="w-1/3 flex flex-col space-y-8 max-w-[392px]">
+        <div className="flex flex-wrap gap-[56px] pb-[90px]">
+          <div className="lg:w-1/3 w-full flex flex-col space-y-8 max-w-[392px]">
             <Image src={Logo} height={34} width={180} alt="logo" />
-            <p className="text-sm font-open_sans">
+            <p className="text-sm font-open_sans text-black/75">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua
             </p>
+            <ul className="flex gap-10 w-full">
+              <li>
+                <FaFacebookF size={20} className="cursor-pointer text-black" />
+              </li>
+              <li>
+                <FaTwitter size={20} className="cursor-pointer text-black" />
+              </li>
+              <li>
+                <FaLinkedinIn size={20} className="cursor-pointer text-black" />
+              </li>
+              <li>
+                <FaInstagram size={20} className="cursor-pointer text-black" />
+              </li>
+            </ul>
           </div>
-          <div className="w-3/5 grid grid-cols-3">
+          <div className="lg:w-3/5 w-full grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 max-sm:gap-4">
             <div>
               <h2 className="text-dark text-xl uppercase font-open_sans">
                 Catalog
@@ -138,7 +158,7 @@ const Footer = () => {
         </div>
       </MaxContentWidthWrapper>
       <div className="bg-black">
-        <MaxContentWidthWrapper className="flex justify-between items-center py-[10px]">
+        <MaxContentWidthWrapper className="flex flex-wrap max-lg:justify-center max-lg:gap-4 lg:justify-between items-center py-[10px]">
           <span className="text-sm text-white font-open_sans">
             © 2022 Coral , Inc.
           </span>

@@ -10,10 +10,10 @@ const buttonVariants = cva(
     variants: {
       variant: {
         small:
-          "text-sm bg-black text-white hover:bg-primary px-[15px] py-[5px] gap-1",
-        line: "text-sm bg-transparent text-black border-b-2 border-b-black px-[15px] pb-[10px] hover:text-primary hover:border-b-primary gap-1",
+          "lg:text-sm text-[14px] bg-black text-white hover:bg-primary px-[15px] py-[5px] gap-1",
+        line: "lg:text-sm text-[14px] bg-transparent text-black border-b-2 border-b-black px-[15px] pb-[10px] hover:text-primary hover:border-b-primary gap-1",
         large:
-          "text-md bg-black text-white hover:bg-primary px-[26px] py-[19px] gap-2",
+          "lg:text-md text-lg bg-black text-white hover:bg-primary px-[26px] py-[19px] gap-2",
         simple:
           "text-lg bg-transparent text-white hover:text-primary px-0 py-0 gap-2",
       },

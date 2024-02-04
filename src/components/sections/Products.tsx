@@ -118,33 +118,37 @@ const Product = [
 
 const Products = () => {
   return (
-    <div className="bg-background">
+    <section className="bg-background">
       <MaxContentWidthWrapper className="pb-[140px]">
         <Title>Products</Title>
         <div className="flex flex-col w-full mt-[35px]">
-          <div className="grid grid-cols-2 items-center">
-            <div className="text-left flex gap-10">
+          <div className="grid lg:grid-cols-2 max-md:grid-cols-1 max-md:justify-center max-md:gap-2 items-center">
+            <div className="lg:justify-start justify-center flex lg:gap-10 gap-3">
               {TabsItems.map((item) => (
                 <ItemTab key={item.id} variant={item.variant}>
                   {item.title}
                 </ItemTab>
               ))}
             </div>
-            <div className="text-end">
+            <div className="lg:justify-end flex items-center justify-center ">
               <Button variant="small">
                 <FaFilter />
                 <span>Filter</span>
               </Button>
             </div>
           </div>
-          <div className="grid grid-cols-4 gap-6 mt-[35px]">
+          <div className="grid grid-cols-4 max-md:grid-cols-2 max-sm:grid-cols-1 gap-6 mt-[35px] mx-auto">
             {Product.map((item) => (
-              <ProductCard key={item.id} {...item} />
+              <ProductCard
+                className="max-sm:max-w-[312px]"
+                key={item.id}
+                {...item}
+              />
             ))}
           </div>
         </div>
       </MaxContentWidthWrapper>
-    </div>
+    </section>
   );
 };
 

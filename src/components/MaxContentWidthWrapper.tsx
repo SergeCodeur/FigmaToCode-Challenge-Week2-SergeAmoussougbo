@@ -6,7 +6,7 @@ type Props = {
 };
 const MaxContentWidthWrapper: React.FC<Props> = ({ children, className }) => {
   return (
-    <div className={cn("max-w-[1320px] mx-auto w-full", className)}>
+    <div className={cn("max-w-[1320px] max-lg:px-5 mx-auto w-full", className)}>
       {children}
     </div>
   );
